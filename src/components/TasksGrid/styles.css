@@ -1,0 +1,101 @@
+.TasksGrid-component {
+  padding: 26px 16px;
+  margin-left: 7px;
+}
+
+.TasksGrid-component .top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TasksGrid-component .top-section .title-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 104px;
+  margin-top: -3px;
+
+  font-size: .76rem;
+  color: #3E69E4;
+}
+
+.TasksGrid-component .top-section .title-position button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 32px;
+  height: 32px;
+  
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  font-size: 14px;
+  color: #7A7A7A;
+}
+
+.TasksGrid-component .top-section .title-position button:hover {
+  transition: background-color .2s;
+  background-color: #F4F4F4;
+}
+
+.TasksGrid-component .top-section > button {
+  display: flex;
+  align-items: center;
+
+  height: 32px;
+  padding: 0px 12px;
+  margin-top: -6px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  
+  font-size: .84rem;
+  color: #3E69E4;
+}
+
+.TasksGrid-component .top-section > button:hover {
+  background-color: #F4F4F4;
+}
+
+.TasksGrid-component .top-section > button .icon-toolbar {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+
+.TasksGrid-component .add-new-task {
+  display: flex;
+  align-items: center;
+
+  margin: auto 3px;
+  padding: 16px;
+
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.TasksGrid-component .add-new-task #add-task-icon {
+  width: 24px;
+  height: 24px;
+
+  margin-right: 12px;
+  color: #3E69E4;
+}
+
+.TasksGrid-component .add-new-task input {
+  width: 100%;
+
+  margin-top: 2px;
+
+  border: none;
+  outline: none;
+  font-size: .8rem;
+}
+
+#focus {
+  border-bottom: 1px solid #3E69E4;
+}
