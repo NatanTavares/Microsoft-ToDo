@@ -1,0 +1,9 @@
+.Grid-component {
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.Grid-component .line {
+  margin: 50px 4px;
+  border-bottom: 1px solid #E7E7E7;
+}
