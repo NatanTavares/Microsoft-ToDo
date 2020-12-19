@@ -1,0 +1,99 @@
+.SideMenu-component {
+  max-width: 290px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.SideMenu-component .icons-left-side {
+  height: 100%;
+}
+
+.SideMenu-component .icons-left-side nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 52px;
+  height: 35px;
+  cursor: pointer;
+  
+  color: #7A7A7A;
+}
+
+.SideMenu-component .icons-left-side nav li > .icon {
+  width: 26px;
+  margin-left: -4px;
+}
+
+.SideMenu-component .icons-left-side nav li #sun-icon {
+  width: 16px;
+}
+
+.SideMenu-component .icons-left-side nav li:hover {
+  background-color: #FAFAFA;
+}
+
+.SideMenu-component .icons-left-side .new-list-section {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.SideMenu-component .icons-left-side .new-list-section:hover {
+  background-color: #FAFAFA;
+}
+
+.SideMenu-component .icons-left-side .new-list-section .icon-position {
+  padding: 5px 15px;
+}
+
+.SideMenu-component .icons-left-bottom-side {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: grid;
+  grid-auto-rows: auto;
+
+  height: 240px;
+  width: 50px;
+
+  border-top: 1px solid #EAEAEA;
+}
+
+.SideMenu-component .icons-left-bottom-side button {
+  width: 50px;
+  height: 42px;
+  
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: #7A7A7A;
+}
+
+.SideMenu-component .icons-left-bottom-side button:hover {
+  transition: all .1s;
+  background-color: #EDEDED;
+}
+
+.SideMenu-component .icons-left-bottom-side button > .icon {
+  width: 17px;
+  height: 17px;
+}
+
+.SideMenu-component .icons-left-bottom-side button #checked-icon {
+  width: 17px;
+  height: 17px;
+
+  color: #3E69E4;
+}
+
+.current {
+  background-color: #EDEDED;
+}
+
+.current > .icon {
+  color: #3E69E4;
+}
