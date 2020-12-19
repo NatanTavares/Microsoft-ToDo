@@ -1,0 +1,116 @@
+.header-component header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #0078D7;
+  color: #FFF;
+
+  height: 48px;
+}
+
+.header-component header .menu-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 100px;
+  width: 100%;
+
+  font-size: .8rem;
+}
+
+.header-component header .menu-left a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header-component header .search-bar {
+  display: flex;
+  align-items: center;
+
+  width: 29vw;
+  max-width: 400px;
+  height: 32px;
+
+  border-radius: 2px;
+  background-color: #C3DDF7; 
+  color: #3E69E4;
+
+  margin: auto 0;
+}
+
+.header-component header .search-bar #search-bar-input {
+  width: 100%;
+  margin: 10px;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.header-component header .search-bar:hover {
+  transition: all .3s;
+  background-color: #FFF;
+  padding: 1px;
+}
+
+.header-component header .search-bar #search-icon {
+  margin-left: 8px;
+  margin-top: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.header-component header .menu-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 192px;
+  width: 100%;
+}
+
+/* cada botão 48px  */
+
+.header-component header .menu-right ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+  list-style: none;
+  ;
+}
+
+.menu-button {
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 0;
+  
+  background-color: transparent;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  transition: all .2s;
+  background-color: #005A9E;
+}
+
+.icon {
+  margin-top: 4px;
+  width: 19px;
+  height: 19px;
+}
+
+#question-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.menu-right ul li button #user-icon {
+  width: 30px;
+  height: 30px;
+}
