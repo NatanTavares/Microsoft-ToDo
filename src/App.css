@@ -1,0 +1,73 @@
+.App Header {
+  position: fixed;
+  width: 100%;
+}
+
+.App main {
+  display: flex;
+}
+
+.App main aside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+
+  max-width: 290px;
+  width: 50px;
+  height: calc(100vh - 48px);
+
+  overflow: hidden;
+
+  background-color: #F4F4F4;
+  border-right: 1px solid #EAEAEA;
+  color: #7A7A7A;
+}
+
+.App main aside .menu-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 12px 0 8px;
+  width: 34px;
+  height: 48px;
+  padding: 0 8px;
+}
+
+.App main aside .menu-position button {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 4px;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+}
+
+.App main aside .menu-position button:hover {
+  border: 1px solid #EAEAEA;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  margin-top: -1px;
+  transition: background-color .2s;
+}
+
+.App main aside .menu-position button > .icon {
+  margin-top: 4px;
+
+  width: 16px;
+  height: 16px;
+  color: #3E69E4;
+}
+
+.App main section {
+  position: absolute;
+  right: 0;
+
+  margin-top: 44px;
+  width: calc(100vw - 66px);
+}
