@@ -1,25 +1,18 @@
-import React from 'react';
+import { useContext, useEffect } from 'react';
+import { TasksContext } from '../../context/TasksContext';
 
 import './styles.css';
 
-interface IProps {
-  size: number;
-}
+function Grid() {
+  const { currentTask, gridWithTasks } = useContext(TasksContext);
 
-function Grid(props: IProps) {
-  function emptyGrid() {
-    const grid = [];
-
-    for (let index = 0; index <= props.size; index++) {
-      grid.push(<div className="line" />);
-    }
-
-    return grid;
-  }
+  useEffect(() => {
+    console.log(gridWithTasks)
+  }, [currentTask, gridWithTasks])
 
   return (
     <div className="Grid-component">
-      {emptyGrid()}
+      {/* {gridWithTasks} */}
     </div>
   );
 }

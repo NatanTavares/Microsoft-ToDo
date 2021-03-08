@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useContext } from 'react';
+import { TasksContext } from '../../context/TasksContext';
 
 import Grid from '../Grid';
 
@@ -13,7 +14,7 @@ interface ITasksGridProps {
 }
 
 function TasksGrid({ title='Default title' }: ITasksGridProps) {
-  const [newTaskState, setNewTaskState] = useState('');
+  const { handleInputValue, handleNewTask } = useContext(TasksContext);
 
   return (
     <div className="TasksGrid-component">
@@ -37,17 +38,14 @@ function TasksGrid({ title='Default title' }: ITasksGridProps) {
       <div className="add-new-task">
         <AiOutlinePlus id="add-task-icon" className="icon" />
         <input
-          aria-label="Adicionar uma tarefa"
-          aria-describedby="baseAddInput-addTask-description" 
-          type="text" 
           placeholder="Adicionar uma tarefa" 
-          value={newTaskState}
-          onChange={event => setNewTaskState(event.target.value)}
+          onChange={event => handleInputValue(event.target.value)}
+          onKeyPress={event => handleNewTask(event)}
         />
       </div>
 
       <div className="grid">
-        <Grid size={14} />
+        <Grid />
       </div>
     </div>
   );

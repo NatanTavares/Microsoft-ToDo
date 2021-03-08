@@ -1,3 +1,12 @@
+.header-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 99;
+}
+
 .header-component header {
   display: flex;
   flex-direction: row;
@@ -72,8 +81,6 @@
   width: 100%;
 }
 
-/* cada botão 48px  */
-
 .header-component header .menu-right ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -83,7 +90,7 @@
 }
 
 .menu-button {
-  width: 48px;
+  width: 51px;
   height: 48px;
 
   border: none;
